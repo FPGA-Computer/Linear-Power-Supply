@@ -5728,10 +5728,8 @@ general purpose rectifier, 1 A</description>
 <part name="U4" library="atmel" deviceset="MEGA8-P" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="Misc Voltages" deviceset="+3.3V" device=""/>
-<part name="SUPPLY8" library="Misc Voltages" deviceset="+3.3V" device=""/>
 <part name="C5" library="ipc-7351-capacitor" deviceset="CAPACITOR_" device="0805" value="0.1uF"/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY10" library="Misc Voltages" deviceset="+3.3V" device=""/>
 <part name="U2" library="Misc opto" deviceset="NOKIA5110" device="ALT-TOP"/>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="Misc Voltages" deviceset="+3.3V" device=""/>
@@ -5818,6 +5816,7 @@ general purpose rectifier, 1 A</description>
 <part name="SUPPLY50" library="supply2" deviceset="GND" device=""/>
 <part name="D4" library="ipc-7351-diode" deviceset="SCHOTTKY_" device="SOT-23" value="BAT54"/>
 <part name="SUPPLY51" library="supply2" deviceset="GND" device=""/>
+<part name="L1" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0603" value="600R"/>
 </parts>
 <sheets>
 <sheet>
@@ -5828,7 +5827,7 @@ general purpose rectifier, 1 A</description>
 <text x="124.46" y="154.94" size="1.778" layer="91">Switched cap Charge pump
 Vee~ -2.7V
 Vdd~ Vcc+1.8V</text>
-<text x="106.68" y="119.38" size="1.778" layer="91">input &lt; 15V</text>
+<text x="137.16" y="119.38" size="1.778" layer="91">input &lt; 15V</text>
 <text x="261.62" y="90.424" size="1.778" layer="91">Voltage
 Trim</text>
 <text x="276.86" y="170.18" size="1.778" layer="91">*</text>
@@ -5842,6 +5841,7 @@ Trim</text>
 Creative Common Attribution 
 4.0 International (CC BY 4.0)</text>
 <text x="295.91" y="16.51" size="2.54" layer="91">(c) Copyrighted by K. C. Lee</text>
+<text x="132.08" y="96.52" size="1.778" layer="91">Ferrite</text>
 </plain>
 <instances>
 <instance part="SUPPLY1" gate="G$1" x="198.12" y="198.12"/>
@@ -5856,16 +5856,14 @@ Creative Common Attribution
 <instance part="R4" gate="G$1" x="251.46" y="66.04" rot="R90"/>
 <instance part="C1" gate="G$1" x="208.28" y="86.36" rot="R90"/>
 <instance part="SUPPLY3" gate="GND" x="208.28" y="78.74"/>
-<instance part="C2" gate="G$1" x="182.88" y="134.62" rot="R90"/>
-<instance part="SUPPLY4" gate="GND" x="134.62" y="78.74"/>
-<instance part="SUPPLY5" gate="GND" x="182.88" y="127"/>
+<instance part="C2" gate="G$1" x="142.24" y="58.42" rot="R90"/>
+<instance part="SUPPLY4" gate="GND" x="116.84" y="78.74"/>
+<instance part="SUPPLY5" gate="GND" x="142.24" y="50.8"/>
 <instance part="U4" gate="G$1" x="175.26" y="73.66"/>
 <instance part="SUPPLY6" gate="GND" x="149.86" y="60.96"/>
-<instance part="SUPPLY7" gate="+3.3V" x="147.32" y="109.22"/>
-<instance part="SUPPLY8" gate="+3.3V" x="182.88" y="142.24"/>
-<instance part="C5" gate="G$1" x="170.18" y="134.62" rot="R90"/>
-<instance part="SUPPLY9" gate="GND" x="170.18" y="127"/>
-<instance part="SUPPLY10" gate="+3.3V" x="170.18" y="142.24"/>
+<instance part="SUPPLY7" gate="+3.3V" x="121.92" y="71.12"/>
+<instance part="C5" gate="G$1" x="144.78" y="83.82" rot="R90"/>
+<instance part="SUPPLY9" gate="GND" x="144.78" y="76.2"/>
 <instance part="U2" gate="G$1" x="340.36" y="68.58"/>
 <instance part="SUPPLY14" gate="GND" x="355.6" y="43.18"/>
 <instance part="SUPPLY17" gate="+3.3V" x="317.5" y="53.34"/>
@@ -5895,11 +5893,11 @@ Creative Common Attribution
 <instance part="R10" gate="G$1" x="251.46" y="139.7" rot="R90"/>
 <instance part="R11" gate="G$1" x="271.78" y="139.7" rot="R90"/>
 <instance part="SUPPLY21" gate="GND" x="309.88" y="180.34"/>
-<instance part="SUPPLY22" gate="G$1" x="106.68" y="144.78"/>
-<instance part="SUPPLY23" gate="+3.3V" x="152.4" y="144.78"/>
-<instance part="C8" gate="G$1" x="152.4" y="134.62"/>
-<instance part="SUPPLY24" gate="GND" x="152.4" y="127"/>
-<instance part="SUPPLY25" gate="GND" x="137.16" y="129.54"/>
+<instance part="SUPPLY22" gate="G$1" x="137.16" y="144.78"/>
+<instance part="SUPPLY23" gate="+3.3V" x="182.88" y="144.78"/>
+<instance part="C8" gate="G$1" x="182.88" y="134.62"/>
+<instance part="SUPPLY24" gate="GND" x="182.88" y="127"/>
+<instance part="SUPPLY25" gate="GND" x="167.64" y="129.54"/>
 <instance part="JP1" gate="A" x="182.88" y="20.32"/>
 <instance part="SUPPLY26" gate="+3.3V" x="195.58" y="27.94"/>
 <instance part="SUPPLY27" gate="GND" x="195.58" y="12.7"/>
@@ -5909,9 +5907,9 @@ Creative Common Attribution
 <instance part="FRAME1" gate="G$2" x="269.24" y="-2.54"/>
 <instance part="SUPPLY29" gate="+3.3V" x="345.44" y="147.32"/>
 <instance part="SUPPLY30" gate="GND" x="345.44" y="127"/>
-<instance part="U6" gate="G$1" x="137.16" y="139.7" smashed="yes">
-<attribute name="NAME" x="132.08" y="147.32" size="1.778" layer="95"/>
-<attribute name="VALUE" x="132.08" y="144.78" size="1.778" layer="96"/>
+<instance part="U6" gate="G$1" x="167.64" y="139.7" smashed="yes">
+<attribute name="NAME" x="162.56" y="147.32" size="1.778" layer="95"/>
+<attribute name="VALUE" x="162.56" y="144.78" size="1.778" layer="96"/>
 </instance>
 <instance part="U7" gate="G$1" x="160.02" y="177.8"/>
 <instance part="SUPPLY31" gate="+3.3V" x="175.26" y="190.5"/>
@@ -5964,12 +5962,15 @@ Creative Common Attribution
 <attribute name="VALUE" x="287.02" y="200.8886" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY46" gate="GND" x="322.58" y="180.34"/>
-<instance part="C20" gate="G$1" x="121.92" y="134.62"/>
-<instance part="SUPPLY49" gate="GND" x="121.92" y="127"/>
-<instance part="R13" gate="G$1" x="114.3" y="139.7" rot="R180"/>
+<instance part="C20" gate="G$1" x="152.4" y="134.62"/>
+<instance part="SUPPLY49" gate="GND" x="152.4" y="127"/>
+<instance part="R13" gate="G$1" x="144.78" y="139.7" rot="R180"/>
 <instance part="R14" gate="G$1" x="241.3" y="83.82" rot="R180"/>
-<instance part="R15" gate="G$1" x="233.68" y="93.98" rot="R180"/>
-<instance part="C3" gate="G$1" x="134.62" y="86.36" rot="R90"/>
+<instance part="R15" gate="G$1" x="233.68" y="99.06" smashed="yes" rot="R180">
+<attribute name="NAME" x="236.22" y="97.536" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="236.22" y="94.742" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="C3" gate="G$1" x="116.84" y="86.36" rot="R90"/>
 <instance part="Q2" gate="G$1" x="233.68" y="149.86" smashed="yes">
 <attribute name="VALUE" x="222.25" y="152.4" size="1.778" layer="96"/>
 <attribute name="NAME" x="222.25" y="154.94" size="1.778" layer="95"/>
@@ -5987,6 +5988,10 @@ Creative Common Attribution
 <attribute name="VALUE" x="296.418" y="175.26" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="SUPPLY51" gate="GND" x="350.52" y="177.8"/>
+<instance part="L1" gate="G$1" x="137.16" y="91.44" smashed="yes">
+<attribute name="NAME" x="134.62" y="87.884" size="1.778" layer="95"/>
+<attribute name="VALUE" x="134.62" y="85.598" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 <bus name="B$1">
@@ -6017,8 +6022,8 @@ Creative Common Attribution
 <segment>
 <pinref part="R13" gate="G$1" pin="2"/>
 <pinref part="SUPPLY22" gate="G$1" pin="VCC"/>
-<wire x1="109.22" y1="139.7" x2="106.68" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="139.7" x2="106.68" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="139.7" x2="137.16" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="139.7" x2="137.16" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VOUT+" class="0">
@@ -6235,22 +6240,19 @@ Creative Common Attribution
 </net>
 <net name="+3.3V" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="VCC@1"/>
-<wire x1="152.4" y1="66.04" x2="147.32" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="66.04" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="U4" gate="G$1" pin="AVCC"/>
-<wire x1="147.32" y1="91.44" x2="152.4" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="SUPPLY7" gate="+3.3V" pin="+3.3V"/>
-<wire x1="147.32" y1="106.68" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
-<junction x="147.32" y="91.44"/>
-</segment>
-<segment>
 <pinref part="C2" gate="G$1" pin="2"/>
-<pinref part="SUPPLY8" gate="+3.3V" pin="+3.3V"/>
-</segment>
-<segment>
-<pinref part="C5" gate="G$1" pin="2"/>
-<pinref part="SUPPLY10" gate="+3.3V" pin="+3.3V"/>
+<pinref part="U4" gate="G$1" pin="VCC@1"/>
+<wire x1="152.4" y1="66.04" x2="142.24" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="66.04" x2="129.54" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="66.04" x2="129.54" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="SUPPLY7" gate="+3.3V" pin="+3.3V"/>
+<pinref part="L1" gate="G$1" pin="1"/>
+<wire x1="132.08" y1="91.44" x2="129.54" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="63.5" x2="142.24" y2="66.04" width="0.1524" layer="91"/>
+<junction x="142.24" y="66.04"/>
+<wire x1="129.54" y1="66.04" x2="121.92" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="66.04" x2="121.92" y2="68.58" width="0.1524" layer="91"/>
+<junction x="129.54" y="66.04"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="VCC"/>
@@ -6268,11 +6270,11 @@ Creative Common Attribution
 </segment>
 <segment>
 <pinref part="SUPPLY23" gate="+3.3V" pin="+3.3V"/>
-<wire x1="144.78" y1="139.7" x2="152.4" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="139.7" x2="152.4" y2="142.24" width="0.1524" layer="91"/>
-<junction x="152.4" y="139.7"/>
+<wire x1="175.26" y1="139.7" x2="182.88" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="139.7" x2="182.88" y2="142.24" width="0.1524" layer="91"/>
+<junction x="182.88" y="139.7"/>
 <pinref part="C8" gate="G$1" pin="+"/>
-<wire x1="152.4" y1="137.16" x2="152.4" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="137.16" x2="182.88" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="U6" gate="G$1" pin="OUT"/>
 </segment>
 <segment>
@@ -6317,10 +6319,10 @@ Creative Common Attribution
 <net name="!RESET" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PC6(/RESET)"/>
-<wire x1="152.4" y1="101.6" x2="142.24" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="101.6" x2="109.22" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="5"/>
-<wire x1="180.34" y1="17.78" x2="142.24" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="17.78" x2="142.24" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="17.78" x2="109.22" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="17.78" x2="109.22" y2="101.6" width="0.1524" layer="91"/>
 <label x="160.02" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -6432,12 +6434,12 @@ Creative Common Attribution
 <pinref part="Q1" gate="G$1" pin="D"/>
 <wire x1="198.12" y1="160.02" x2="198.12" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="116.84" x2="241.3" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="116.84" x2="241.3" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="116.84" x2="241.3" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="93.98" x2="241.3" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="99.06" x2="241.3" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="A"/>
-<wire x1="241.3" y1="91.44" x2="241.3" y2="93.98" width="0.1524" layer="91"/>
-<junction x="241.3" y="93.98"/>
+<wire x1="241.3" y1="91.44" x2="241.3" y2="99.06" width="0.1524" layer="91"/>
+<junction x="241.3" y="99.06"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -6590,8 +6592,8 @@ Creative Common Attribution
 <net name="N$10" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="AREF"/>
-<wire x1="152.4" y1="93.98" x2="134.62" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="93.98" x2="134.62" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="93.98" x2="116.84" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="93.98" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -6599,11 +6601,11 @@ Creative Common Attribution
 <segment>
 <pinref part="U6" gate="G$1" pin="IN"/>
 <pinref part="R13" gate="G$1" pin="1"/>
-<wire x1="129.54" y1="139.7" x2="121.92" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="139.7" x2="152.4" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="C20" gate="G$1" pin="+"/>
-<wire x1="121.92" y1="139.7" x2="119.38" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="137.16" x2="121.92" y2="139.7" width="0.1524" layer="91"/>
-<junction x="121.92" y="139.7"/>
+<wire x1="152.4" y1="139.7" x2="149.86" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="137.16" x2="152.4" y2="139.7" width="0.1524" layer="91"/>
+<junction x="152.4" y="139.7"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -6636,12 +6638,11 @@ Creative Common Attribution
 <segment>
 <pinref part="U4" gate="G$1" pin="PC1(ADC1)"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="218.44" y1="91.44" x2="218.44" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="93.98" x2="218.44" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="91.44" x2="218.44" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="99.06" x2="200.66" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="228.6" y1="93.98" x2="218.44" y2="93.98" width="0.1524" layer="91"/>
-<junction x="218.44" y="93.98"/>
+<wire x1="228.6" y1="99.06" x2="218.44" y2="99.06" width="0.1524" layer="91"/>
+<junction x="218.44" y="99.06"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -6706,6 +6707,17 @@ Creative Common Attribution
 <pinref part="D4" gate="G$1" pin="A"/>
 <wire x1="292.1" y1="175.26" x2="292.1" y2="177.8" width="0.1524" layer="91"/>
 <junction x="292.1" y="177.8"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="AVCC"/>
+<pinref part="L1" gate="G$1" pin="2"/>
+<wire x1="152.4" y1="91.44" x2="144.78" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="91.44" x2="142.24" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="88.9" x2="144.78" y2="91.44" width="0.1524" layer="91"/>
+<junction x="144.78" y="91.44"/>
 </segment>
 </net>
 </nets>

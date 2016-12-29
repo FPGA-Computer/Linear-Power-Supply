@@ -7,6 +7,7 @@ The firmware is licensed under GPL 3.0
 Schematic is EagleCAD file and firmware is for Atmel Studio 7.0.
 
 The full detail of these licenses:
+
 http://creativecommons.org/licenses/by/4.0/
 
 http://www.gnu.org/licenses/gpl-3.0.en.html

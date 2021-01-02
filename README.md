@@ -13,4 +13,4 @@ http://creativecommons.org/licenses/by/4.0/
 http://www.gnu.org/licenses/gpl-3.0.en.html
 
 Project page:
-https://hackaday.io/project/19078-adjustable-linear-bench-supply-in-1k
+https://hw-by-design.blogspot.com/2018/07/adjustable-linear-bench-supply-in-1k.html
